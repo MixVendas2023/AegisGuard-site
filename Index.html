@@ -7,7 +7,7 @@
 
 <title>AegisGuard | Segurança Inteligente Web3</title>
 
-<meta name="description" content="AegisGuard - Proteção inteligente para carteiras, negociações e usuários no ecossistema Web3.">
+<meta name="description" content="AegisGuard - Proteção inteligente para carteiras digitais, contratos inteligentes e usuários no ecossistema Web3.">
 
 <style>
 
@@ -28,11 +28,13 @@ header{
 padding:25px 8%;
 display:flex;
 align-items:center;
+justify-content:space-between;
 }
 
-.logo img{
-width:170px;
-height:auto;
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#00d9ff;
 }
 
 .hero{
@@ -83,6 +85,12 @@ color:#00d9ff;
 margin-bottom:30px;
 }
 
+.texto{
+max-width:900px;
+color:#b7c7d9;
+font-size:18px;
+}
+
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -94,6 +102,12 @@ background:#0b1224;
 border:1px solid #12324f;
 padding:30px;
 border-radius:18px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#00d9ff;
 }
 
 .card h3{
@@ -105,14 +119,17 @@ margin-bottom:15px;
 color:#b7c7d9;
 }
 
-.destaque{
-background:#080d1b;
+.roadmap li{
+margin:15px 0;
+color:#b7c7d9;
+list-style:none;
 }
 
 footer{
-text-align:center;
 padding:30px;
-color:#8ca3bb;
+text-align:center;
+background:#03050d;
+color:#8da2b8;
 }
 
 @media(max-width:700px){
@@ -121,8 +138,12 @@ color:#8ca3bb;
 font-size:38px;
 }
 
-.logo img{
-width:130px;
+.hero p{
+font-size:17px;
+}
+
+.titulo{
+font-size:30px;
 }
 
 }
@@ -138,7 +159,7 @@ width:130px;
 <header>
 
 <div class="logo">
-<img src="logo.jpg" alt="AegisGuard Logo">
+🛡️ AegisGuard
 </div>
 
 </header>
@@ -148,16 +169,18 @@ width:130px;
 <section class="hero">
 
 <h1>
-Proteção inteligente para o futuro da
-<span>Web3</span>
+Proteção Inteligente para o <span>Futuro da Web3</span>
 </h1>
 
 <p>
-AegisGuard é uma camada avançada de segurança criada para proteger usuários, carteiras e negociações blockchain contra ameaças digitais, contratos maliciosos e riscos do ecossistema cripto.
+Segurança avançada para carteiras digitais, contratos inteligentes,
+tokens e transações blockchain. O AegisGuard cria uma camada inteligente
+de proteção contra riscos, golpes e ameaças digitais.
 </p>
 
-<a class="botao" href="#">
-Conheça a AegisGuard
+
+<a href="#servicos" class="botao">
+Conhecer a Plataforma
 </a>
 
 </section>
@@ -170,16 +193,21 @@ Conheça a AegisGuard
 Sobre a AegisGuard
 </h2>
 
-<p>
-Uma startup de segurança blockchain focada em tornar a experiência Web3 mais segura, transparente e confiável.
-Nossa visão é construir uma infraestrutura inteligente de proteção entre usuários e o mundo descentralizado.
+<p class="texto">
+
+A AegisGuard é uma plataforma de segurança Web3 criada para ajudar
+usuários a identificar riscos antes de interagir com aplicações
+descentralizadas. Nossa missão é tornar o universo blockchain mais
+seguro, simples e confiável.
+
 </p>
 
 </section>
 
 
 
-<section>
+
+<section id="servicos">
 
 <h2 class="titulo">
 Recursos de Segurança
@@ -188,36 +216,57 @@ Recursos de Segurança
 
 <div class="cards">
 
+
 <div class="card">
-<h3>🧠 Análise Inteligente</h3>
+
+<h3>🧠 Smart Security Analysis</h3>
+
 <p>
-Avaliação de riscos antes de interações com contratos inteligentes e aplicações Web3.
+Análise inteligente de riscos antes de interações com contratos
+inteligentes e aplicações Web3.
 </p>
+
 </div>
 
 
+
 <div class="card">
-<h3>🛡️ Proteção de Carteiras</h3>
+
+<h3>🛡️ Wallet Protection</h3>
+
 <p>
-Identificação de permissões perigosas e atividades suspeitas.
+Avaliação de carteiras digitais, permissões e possíveis conexões
+perigosas.
 </p>
+
 </div>
 
 
+
 <div class="card">
-<h3>🔎 Security Scanner</h3>
+
+<h3>🔎 Token & Contract Scanner</h3>
+
 <p>
-Análise de tokens, contratos e aplicações antes das negociações.
+Detecção de sinais de risco em tokens, contratos inteligentes
+e transações blockchain.
 </p>
+
 </div>
 
 
+
 <div class="card">
-<h3>⛓️ Base Ecosystem</h3>
+
+<h3>🌐 Web3 Threat Detection</h3>
+
 <p>
-Foco inicial na rede Base com expansão para outras redes EVM.
+Identificação de phishing, links maliciosos, DApps suspeitas e
+possíveis golpes digitais.
 </p>
+
 </div>
+
 
 </div>
 
@@ -225,52 +274,73 @@ Foco inicial na rede Base com expansão para outras redes EVM.
 
 
 
-<section class="destaque">
+
+<section>
+
+<h2 class="titulo">
+Primeiro Produto
+</h2>
+
+<p class="texto">
+
+<strong>AegisGuard Security Scanner</strong>
+
+<br><br>
+
+Uma ferramenta criada para auxiliar usuários antes de:
+
+<br><br>
+
+✅ Conectar uma carteira<br>
+✅ Aprovar contratos<br>
+✅ Comprar tokens<br>
+✅ Usar protocolos DeFi<br>
+✅ Realizar negociações Web3
+
+</p>
+
+</section>
+
+
+
+
+<section>
 
 <h2 class="titulo">
 Roadmap
 </h2>
 
 
-<div class="cards">
+<ul class="roadmap">
 
-<div class="card">
-<h3>Fase 1 — Fundação</h3>
-<p>
-Marca, plataforma inicial e infraestrutura Web3.
-</p>
-</div>
+<li>✅ Fase 1 — Marca e plataforma inicial</li>
 
+<li>🔄 Fase 2 — Scanner de contratos e análise de riscos</li>
 
-<div class="card">
-<h3>Fase 2 — Segurança</h3>
-<p>
-Scanner de contratos e proteção para usuários.
-</p>
-</div>
+<li>🔄 Fase 3 — Integrações blockchain e APIs de segurança</li>
 
+<li>🔄 Fase 4 — Plataforma completa de proteção Web3</li>
 
-<div class="card">
-<h3>Fase 3 — Expansão</h3>
-<p>
-Infraestrutura avançada de segurança blockchain.
-</p>
-</div>
+</ul>
 
-
-</div>
 
 </section>
 
 
 
+
 <footer>
 
-🛡️ AegisGuard
-<br>
-Protegendo o futuro da Web3
+<p>
+AegisGuard — Protecting the Future of Web3
+</p>
+
+<p>
+Security • Blockchain • Intelligence • Trust
+</p>
 
 </footer>
+
 
 
 </body>
